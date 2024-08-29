@@ -41,7 +41,7 @@ export default function Home() {
         maxRating={5}
         defaultRating={3}
         color="#fcc419"
-        size="42"
+        size="48"
         onSetRating={(rating) => console.log(rating)}
       />
     </>

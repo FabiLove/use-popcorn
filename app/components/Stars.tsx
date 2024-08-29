@@ -5,8 +5,8 @@ const Arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const Stars = ({
   color = "#fcc419",
   maxRating = "5",
-  defaultRating = "3",
-  size = "42",
+  defaultRating = "0",
+  size = "48",
   onSetRating,
 }) => {
   return (
@@ -16,8 +16,8 @@ const Stars = ({
           <h2> {number} </h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="42"
+            width={size}
+            height={size}
             viewBox="0 0 20 20"
             fill={color}
             stroke={color}
