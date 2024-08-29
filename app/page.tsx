@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./index.css";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
+import Stars from "./components/Stars";
 
 const tempMovieData = [
   {
@@ -36,6 +37,13 @@ export default function Home() {
     <>
       <Navbar movies={movies} />
       <Main movies={movies} />
+      <Stars
+        maxRating={5}
+        defaultRating={3}
+        color="#fcc419"
+        size="42"
+        onSetRating={(rating) => console.log(rating)}
+      />
     </>
   );
 }
